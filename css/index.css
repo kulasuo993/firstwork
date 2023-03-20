@@ -1,448 +1,548 @@
-.w1{
-  width: 1200px;
-  height: 100%;
-  margin: 0 auto;
-  background: red;
-}
-
-.inner{
-  font-size: 30px;
-}
-
-.inner .head{
-  width: 100%;
-  height: 8.27rem;
-  margin: 0 auto;
-  background: url(../img/bg01.jpg) no-repeat;
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.inner .head .top{
-  background:url(../img/sprite.png) no-repeat;
-  background-position:0 -4.08rem;
-  background-size: 7.5rem 5rem;
-  width: 1.97rem;
-  height:.68rem;
-  position: absolute;
-  top: .15rem;
-  right: .15rem;
-  font-size: 0;
-}
-.inner .head .top1{
-  background:url(../img/p1_slogan.png) no-repeat;
-  background-position: center;
-  background-size: 5.33rem 4.57rem;
-  height:5.2rem;
-  width: 8.23rem;
-  position: absolute;
-  top: 3rem;
-  right:0px;
-  left:0px;
-  margin: 0 auto;
-}
-.inner .head .top1 .area{
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.inner .head .top1 .area a{
-    position: absolute;
-    bottom: 1.3rem;
-    left:0;
-    right:0;
+.one{
+    background: url(../img/one.jpg) no-repeat;
+    width: 7.5rem;
+    height: 11.74rem;
+    position: relative;
     margin: 0 auto;
+    background-position: center center;
+    background-size: cover;
+}
+.one .inner{
+    width: 4.96rem;
+   height: 100%;
+    margin: 0 auto;
+    position:relative;
+    padding-top: .26rem;
+}
+.one .inner .logo{
+    background: url(../img/one_logo.png) no-repeat;
+    background-size: 100%;
+    width: 3.09rem;
+    height: .91rem;
+    margin: 0 auto;
+}
+.one .inner .box{
+    background:url(../img/one_box.png) no-repeat;
+    background-size: 100%;
+    width: 3.06rem;
+    height: 6.06rem;
+    margin: 0.85rem auto;
+}
+.one .inner .input{
+    background: url(../img/one_input.png) no-repeat;
+    background-size: 100%;
+    width: .97rem;
+    height: 1.01rem;
+    margin: -1.1rem auto;
+    animation: input  linear 2s infinite;
+    
+}
+@keyframes input{
+    0%{
+        transform: rotate(90deg);
+    }
+    33%{
+        transform: rotate(180deg);
+    }
+    66%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.one .inner .input a{
     display: block;
-    width: 50%;
-    height: 0.7rem;
-    font-size: 0;
+    width: 100%;
+    height: 100%;
 }
-
-.inner .head .top a{
-  display: block;
-  height: 100%;
+.one .inner .yuyue{
+    background: url(../img/one_yuyue.png) no-repeat;
+    background-size: 100%;
+    width: 6.55rem;
+    height: .97rem;
+    margin: 1.68rem -.7rem;
 }
-
-.inner .head .top span{
-  color: red;
-  font-size: 0;
+.one .inner .yuyue a{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
-.inner .head .top1 span{
-  color: red;
-  font-size:0  ;
-}
-
 .two{
-  width: 100%;
-  height: 9.18rem;
-  margin: 0 auto;
-  background: url(../img/bg02.jpg) no-repeat;
-  background-position: center ;
-  background-size: cover;
-  position: relative;
-  
-  }
-
-
-.top2 {
-  display: block;
-  font-size: .25rem;
-  text-align: center;
-  color: white;
-  padding-top: .3rem;
+    background: url(../img/two.jpg) no-repeat;
+    width: 7.5rem;
+    height: 15.2rem;
+    position: relative;
+    margin: 0 auto;
+    background-position: center center;
+    background-size: cover;
 }
-.top3 {
- background: url(../img/sprite.png) no-repeat;
- background-position:0 -.2rem;
- background-size: 7.5rem 5rem;
- width: 6.48rem;
- height: .64rem;
- position: absolute;
- right: 0;
- top: 1rem;
- left: 0;
- margin: 0 auto;
+.two .inner{
+    width: 4.96rem;
+    height: 100%;
+     margin: 0 auto;
+     position:relative;
 }
-.top3 a{
-  display: block;
-  height: 100%;
-  font-size: 0;
+.two .inner .logo{
+    background: url(../img/two_logo.png) no-repeat;
+    background-size: 100%;
+    width: 3.65rem;
+    height: 2.52rem;
+    margin: 0 auto;
+} 
+.two .inner .list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    width: 8rem;
+    margin: .2rem -1.4rem auto;
 }
-
-.top4 {
-  background:url(../img/sprite.png) no-repeat;
-  background-position:-.54rem -.8rem;
-  background-size: 7.5rem 5rem;
-  width: 5.2rem;
-  height: .55rem;
-  position: absolute;
-  right:0;
-  top:2rem;
-  left: 0;
-  margin: 0 auto;
-  
+.two .inner .list li{
+    margin-right: .2rem;
+    border: 1px dotted #ccc;
+    background: url(../img/two_link.png) no-repeat;
+    width: 1.94rem;
+    height: 6.29rem;
+    background-size: 100%;
+    margin-bottom: .2rem;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
 }
-.top4 a{
-  display: block;
-  height: 100%;
-  font-size: 0;
+.two .inner .list li::after{
+    display: none;
+    content: "";
+    width: 0.62rem;
+    height: 0.66rem;
+    background: url(../img/dacheng.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0.6rem;
+    right: -0.24rem;
 }
-
-.top2 {
-  display: block;
-  font-size: .25rem;
-  text-align: center;
-  color: white;
-  padding-top: .3rem;
+.two .inner .list li:hover::after{
+    display: block;
+}
+.two .inner .list li p:nth-child(1){
+    font-size: .8rem;
+    color: white;
+    margin:.25rem .17rem auto;
 }
 
-
-.num{
-  display: block;
-  text-align: center;
-  font-size: .1rem;
-  margin-top: 2.2rem;
-  position: relative;
+.two .inner .list li span{
+    font-size: .35rem;
+    color: white;
 }
 
-.num p{
-  display: inline-block;
+.two .inner .list .bg
+{
+    background: url(../img/two_bg.png) no-repeat;
+    width: 1.47rem;
+    height: .96rem;
+    background-size: 100%;
+    margin-top: .32rem;
+    margin-left: .2rem;
 }
-.num1{
-  color:#f7d974;
+.two .inner .list :hover .bg{
+    background: url(../img/two_bg1.png) no-repeat;
+    background-size: 100%;
+    
 }
-.num2{
-  color: #ff9000; 
+.two .inner .list li  .pic{
+    background: url(../img/two_gold1.png) no-repeat;
+    width: .79rem; 
+    height: .66rem; 
+    background-size: 100%;
+    position:absolute;
+    margin-top: .2rem;
+    margin-left: .3rem;
 }
- .num:after{
-  display: block;
-  content: "";
-  background: url(../img/sprite.png) no-repeat;
-  background-position: -2.3rem -1.81rem ;
-  background-size: 7.5rem 5rem;
-  width: 2.29rem;
-  height: .15rem;
-  position: absolute;
-  right: 0;
-  left: 0.5rem;
-  top: 0.35rem;
-  margin: 0 auto;
-}
+.two .inner .list :hover .pic{
+    background: url(../img/two_gold.png) no-repeat;
+    background-size: 100%;
+} 
 
-/* 进度条 */
-.top5{
-  position: relative;
-  margin: 0 auto;
+.two .inner .list li p:nth-child(2){
+    font-size: .25rem;
+    color: rgba(255, 255, 255, .5);
+    margin: -.2rem .23rem auto;
 }
-
-.progress{
-  width: 6.87rem;
-  height: .49rem;
-  background: url(../img/line.png) no-repeat ;
-  top: 1rem;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-  position: relative;
+.two .inner .list li p:nth-child(3){
+    font-size: .05rem;
+    margin: 0 .23rem auto;
+    color: rgba(255, 255, 255, .8);
+    overflow: hidden;
 }
-.progress .bar{
-  width:2.58rem;
-  height: 1.04rem;
-  background: url(../img/bg_progress_bar_on.png) repeat-x;
-  position: absolute;
-  top: -.4rem;
- 
-  
-}
-.progress .icon{
-  width:100%;
-  height:100%;
-  position: relative;
-}
-.progress .pointer{
-  background: url(../img/sprite.png) no-repeat center bottom;
-  background-position:-7.35rem -.68rem;
-  background-size: 7.5rem 5rem;
-  width:.16rem ;
-  height:.28rem ;
-  position:absolute;
-  top:.2rem;
-  display: block;
-}
-.progress .pointer1{
-  width:.16rem ;
-  height:.28rem ;
-  background: url(../img/sprite.png) no-repeat center bottom;
-  background-position:-7.35rem -.34rem;
-  background-size: 7.5rem 5rem;
-  position:absolute;
-  top:.2rem;
-  display: block;
-}
-.ziti{
-  font-size: .1rem;
-  display: block;
-  padding-top: 1rem;
-  text-align: center;
-  margin: 0 auto;
-}
-.zero{
-  font-size: 0;
-}
-.progress .pointer:first-child{
-  left:.8rem;
-}
-.progress .pointer:nth-child(2){
-  left:2.3rem;
-}
-.progress .pointer1:nth-child(3){
-  left:3.9rem;
-}
-.progress .pointer1:nth-child(4){
-  right:1rem;
+.two .inner .list .bg .text{
+    font-size: .05rem;
+    text-align: center;
+    position: absolute;
+   margin: .95rem .1rem auto;
 }
 
 
-
-
-
-
-
-
-/* 猫咪 */
-.reward{
-  width: 90%;
-  margin: 0 auto;
-  margin-top: .1rem;
-}
-.reward li{
-  background: url("../img/p2_box.png") no-repeat ;
-  height: 1.6rem;
-  width: 1.44rem;
-  background-size: 100%;
-  float: left;
-  margin: 0 .1rem;
-  
-}
-.reward .img p{
-  height: 1.2rem;
-  text-align: center;
-  margin-top: .1rem;
-  margin-right: .08rem;
-  margin-left: .05rem;
-  overflow: hidden;
-}
-.reward .img p img{
-  max-width:100%;
-  
-}
-.reward .img span{
-  line-height: .3rem;
-  font-size: .18rem;
-  color: red;
-  display: block;
-  font-size: .18rem;
-  text-align: center;
+.two .inner .list li:hover{
+    background: url(../img/two_link2.png) no-repeat;
+    width: 1.94rem;
+    height: 6.29rem;
+    background-size: 100%;
 }
 
 
+.three{
+    background: url(../img/three.jpg) no-repeat;
+    width: 7.5rem;
+    height: 15.23rem;
+    position: relative;
+    margin: 0 auto;
+    background-position: center center;
+    background-size: cover;
+}
+.three .inner{
+    width: 4.96rem;
+    height: 100%;
+     margin: 0 auto;
+     position:relative;
+     padding-top: 0.83rem;
+}
+.three .inner .yuyue{
+    background: url(../img/two_yuyue.png) no-repeat;
+    width: 4.67rem;
+    height: .85rem;
+    background-size: 100%;
+}
+.three .inner .jiesao{
+    background: url(../img/three_jiesao.png) no-repeat;
+    width: 3.05rem;
+    height: 2.52rem;
+    background-size: 100%;
+    margin: 0 auto;
+}
+.three .inner .wawa{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: .2rem;
+}
+.three .inner .wawa li{
+    background: url(../img/three_wawa.png) no-repeat;
+    width: 1.43rem;
+    height: 1.43rem;
+    background-size: 100%;
+}
+.three .inner .wawa img{
+    width: 1.21rem;
+    height: 1.21rem;
+    background-size: 100%;
+    margin-top: .1rem;
+    margin-left: .12rem;
+}
+.three .inner .wawa li::after{
+    background: url(../img/three_K.png) no-repeat;
+    display: block;
+    content: "";
+    width: .17rem;
+    height: .17rem;
+    background-size: 100%;
+    margin-top: -.7rem;
+    margin-left: 1.5rem;
+}
+.three .inner .wawa li:last-child::after{
+    display: none   ;
+}
+.three .inner .left{
+    background: url(../img/three_left.png) no-repeat;
+    width: .68rem;
+    height: .7rem;
+    background-size: 100%;
+    margin-top: -1rem;
+    margin-left: -.8rem;
+    cursor: pointer;
+}
+.three .inner .right{
+    background: url(../img/three_right.png) no-repeat;
+    width: .68rem;
+    height: .7rem;
+    background-size: 100%;
+    margin-top: -.7rem;
+    margin-left: 5.1rem;
+    cursor: pointer;
+}
+.three .inner .sanjiao{
+    background: url(../img/three_sanjiao.png) no-repeat;
+    width: .12rem;
+    height: .1rem;
+    background-size: 100%;
+    position: absolute;
+    top: 5.75rem;
+    left: -.5rem;
+}
+.three .inner .sanjiao p{
+    color: rgb(192, 194, 197);
+    margin-top: .2rem;
+    /* word-wrap: break-word; */
+    transform:rotate(90deg);
+}
+/* (自动换行并且字母歪着)transform:rotate(90deg);
 
+-ms-transform:rotate(90deg); /* IE 9  
+word-wrap: break-word英文自动换行 */
 
-.link_me{
-  background: url(../img/sprite.png) no-repeat;
-  background-position: -2.44rem -3.52rem ;
-  background-size: 7.5rem 5rem;
-  width: 4.24rem;
-  height: 2.13rem;
-  position: absolute;
-  right:0;
-  top:7rem;
-  left: 0;
-  margin: 0 auto;
-}
-
-.link_me a{
-  display: block;
-  width: 100%;
-  height: 100%;
-  font-size: 0;
-}
-
-
-.footer {
-  width: 100%;
-  height: 7.48rem;
-  font-size: 15px;
-  background-color: black;
-  color: #737273;
-  overflow: hidden;
-  line-height: 1.3;
-  text-align: center;
-}
-.footer .guanzhu{
-  text-align:center;
-  width:100%;
-  height: .1rem;
-  position: absolute;
-  
-}
-.footer .guanzhu a{
-  color: yellow;
-  display: block;
-  height: 100%;
-  font-size: .25rem;
-}
-
-.logo {
-  margin-top: .25rem;
-}
-.logo p{
-  display: inline-block;
-}
-.logo  a{
-  font-size: 0;
-}
-
-.logo .pic{
-  background: url(../img/sprite.png) no-repeat;
-  background-position: 0 -2.1rem;
-  background-size: 7.5rem 5rem;
-  width: .7rem;
-  height: .7rem;
-
-}
-
-.logo .pic1{
-  background: url(../img/sprite.png) no-repeat;
-  background-position: -.76rem -2.1rem;
-  background-size: 7.5rem 5rem;
-  width: .7rem;
-  height: .7rem;
-  margin-right: .3rem;
-}
-
-.link{
-  margin-top: .4rem;
-}
-.link p{
-  display: inline-block;
-  margin-right: .2rem;
-  font-size: .2rem;
-}
-.link a{
-  color: rgba(255, 255, 255, .5);
-}
-.link span{
-  display: inline-block;
-  
-}
-
-
-
-.icon1{
-  background: url(../img/sprite.png) no-repeat;
-  background-position: -6.89rem  0 ;
-  background-size: 7.5rem 5rem;
-  width: .2rem;
-  height: .24rem;
- vertical-align: middle;
- /* vertical-align: 对齐方式 vertical-align: middle、top、bottom(这些具体的属性值)，
- 也可以是具体的数字（可为负数），如：vertical-align: -2px */
-}
-.icon2{
-  background: url(../img/sprite.png) no-repeat;
-  background-position: -7.1rem 0 ;
-  background-size: 7.5rem 5rem;
-  width: .2rem;
-  height: .24rem;
-  vertical-align: middle;
-}
-.icon3{
-  background: url(../img/sprite.png) no-repeat;
-  background-position: -7.3rem 0 ;
-  background-size: 7.5rem 5rem;
-  width: .2rem;
-  height: .24rem;
-  vertical-align: middle;
+.three .inner .wm{
+    background: url(../img/three_box.png) no-repeat;
+    background-size: 100%;
+    width: 7.5rem;
+    height: 8.02rem;
+    margin: .4rem -1.3rem auto;
 }
 
-.other{
-  margin-top: .1rem;
+.three .inner .cv{
+    background: url(../img/three_CV.png) no-repeat;
+    background-size: 100%;
+    width: 1.16rem;
+    height: 4.46rem;
+    margin-top: -8rem;
+    margin-left: 4.7rem;
 }
-.other p{
-  display: inline-block;
+.three .inner .link{
+    background: url(../img/three_link.png) no-repeat;
+    background-size: 100%;
+    width: .9rem;
+    height: .9rem;
+    margin-top: 2.2rem;
+    margin-left: -.7rem;
+}
+.three .inner .link:hover{
+    background: url(../img/three_link3.png) no-repeat;
+    background-size: 100%;
+    width: .9rem;
+    height: .9rem;
+    cursor: pointer;
+}
+.three .inner .link1{
+    background: url(../img/three_link2.png) no-repeat;
+    background-size: 100%;
+    width: .9rem;
+    height: .9rem;
+   margin-top: -.83rem;
+    margin-left: 4.7rem;
+}
+.three .inner .link1:hover{
+    background: url(../img/three_link1.png) no-repeat;
+    background-size: 100%;
+    width: .9rem;
+    height: .9rem;
+    cursor: pointer;
+}
+.three .inner .name{
+    background: url(../img/three_name.png) no-repeat;
+    background-size: 100%;
+    width: 2.87rem;
+    height: 1.87rem;
+    margin-top: .62rem;
+    margin-left: -.65rem;
+    position: relative;
+    z-index: 2;
+}
+.three .inner .name p{
+    color: #606060;
+    font-size: .5rem;
+    padding-top: .2rem;
+    text-align: center;
+}
+.three .inner .end{
+    width: 4rem;
+    height: 1.27rem;
+    margin-top: -2rem;
+    margin-left: 2.7rem;
+}
+.three .inner .end p:nth-child(1){
+    color: #d79365;
+    font-size: .1rem;
+}
+.three .inner .end p:nth-child(2){
+    color: #99a8c1;
+    font-size: .3rem;
+}
+.three .inner .end p:nth-child(3),
+.three .inner .end p:nth-child(4),
+.three .inner .end p:nth-child(5),
+.three .inner .end p:nth-child(6){
+    color: #626262;
+    font-size: .2rem;
+    display: inline-block;
+    width: 1.45rem;
+}
+.three .inner .end span
+{
+    display: inline-block; 
+    width:.1rem;
+    height: .1rem; 
+    vertical-align: middle;
+    border-radius: 70%;
+    background: #626262;
+    margin-right: .1rem;
 }
 
-.other a{
-  font-size:0 ;
-}
-.other .bird{
-  background: url(../img/sprite.png) no-repeat;
-  background-size: 7.5rem 5rem;
-  background-position: 0 -3rem;
-  width: .91rem;
-  height: .4rem;
-  margin-right: .55rem;
-}
-.other .geae{
-  background: url(../img/sprite.png) no-repeat;
-  background-size: 7.5rem 5rem;
-  background-position: 0 -3.52rem;
-  width: .89rem;
-  height: .4rem;
+.four{
+    background: url(../img/four.jpg) no-repeat;
+    width: 7.5rem;
+    height: 11.52rem;
+    background-size: 100%;
+    position: relative;
+    margin: 0 auto;
+    background-position: center center;
+    background-size: cover;
 }
 
-.copyright {
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-  overflow: hidden;
-  padding-top: .2rem;
-  font-size: .1rem;
-  color:rgba(255, 255, 255, .3);
+.four .inner{
+    width: 4.96rem;
+    height: 100%;
+    margin-top: .5rem;
+    margin-left: 1.3rem;
+    position:absolute;
 }
-.copyright a{
-  color: rgba(255, 255, 255, .3);
+.four .inner .top{
+    background: url(../img/four_top.png) no-repeat;
+    width: 3.05rem;
+    height: 1.54rem;
+    background-size: 100%;
+    margin: 0 auto;
+}
+.four .inner .center{
+    background: url(../img/four_center.png) no-repeat;
+    background-size: 100%;
+    width: 4.96rem;
+    height: 9.26rem;
+    top: .4rem;
+    position: relative;
+    z-index: 2;
+}
+.four .inner .left{
+    background: url(../img/four_left.png) no-repeat;
+    width: 1.8rem;
+    height: 5.8rem;
+    background-size: 100%;
+    margin-top: -7rem;
+    margin-left: -1.3rem;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.four .inner .left:hover{
+    transform: translate(.2rem,0) scale(1.2);
+    position:relative;
+    z-index: 3;
+
+}
+/* filter: opacity(70%); 设置清晰度 */
+.four .inner .right{
+    background: url(../img/four_right.png) no-repeat;
+    width: 1.8rem;
+    height: 5.8rem;
+    background-size: 100%;
+    margin-top: -5.8rem;
+    margin-left:4.4rem;
+    filter: opacity(70%);
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.four .inner .right:hover{
+    transform: translate(-2.2rem,0) scale(1.65);
+    position:relative;
+    z-index: 3;
+}
+.four .inner .top_left{
+    background: url(../img/three_link.png) no-repeat;
+    background-size: 100%;
+    width: .9rem;
+    height: .9rem;
+    margin-top: -7.2rem;
+    margin-left: -1.15rem;
+}
+.four .inner .top_left:hover{
+    background: url(../img/three_link3.png) no-repeat;
+    background-size: 100%;
+    width: .9rem;
+    height: .9rem;
+    cursor: pointer;
+}
+.four .inner .top_right{
+    background: url(../img/three_link2.png) no-repeat;
+    background-size: 100%;
+    width: .9rem;
+    height: .9rem;
+   margin-top: -.83rem;
+    margin-left: 5.2rem;
+}
+.four .inner .top_right:hover{
+    background: url(../img/three_link1.png) no-repeat;
+    background-size: 100%;
+    width: .9rem;
+    height: .9rem;
+    cursor: pointer;
 }
 
+.four .inner .link{
+   margin-left: .84rem;
+    margin-top: 7.9rem;
+    position: relative;
+    z-index: 2;
+}
+.four .inner .link li{
+    background: url(../img/four_link.png) no-repeat;
+    width: .23rem;
+    height: .23rem;
+    background-size: 100%;
+    display: inline-block;
+    cursor: pointer;
+}
+.four .inner .link p{
+    display: inline-block;
+    text-align: top;
+    width: .5rem;
+    height: .01rem;
+    border-top: 1px solid #8295b3;
+    padding-top: .09rem;
+}
+.four .inner .link li:hover{
+    background: url(../img/four_link1.png) no-repeat;
+    width: .23rem;
+    height: .23rem;
+    background-size: 100%;
+    
+}
 
+.five{
+    background-color: white;
+    width: 7.5rem;
+    height: 4rem;
+    position: relative;
+    margin: 0 auto;
+    background-position: center center;
+    background-size: cover;
+} 
+.five .inner{
+    height: 100%;
+    position: absolute;
+   margin-top: .8rem;
+   margin-left: .65rem;
+}
+.five .inner .logo{
+    background: url(../img/five.png) no-repeat;
+    background-size: 100%;
+    width: 1.56rem;
+    height: .84rem;
+    margin: 0 auto;
+}
+.five .inner p{
+    font-size: .1rem;
+    text-align: center;
+    line-height: .3rem;
+    color: #8f8f8f;
+}
+.five .inner .last{
+    color: rgba(184, 184, 184, .8);
+}

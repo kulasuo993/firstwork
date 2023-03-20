@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .list1{
+            display: flex;
+            /* flex-direction: row; */
+            background-color: blue;
+            /* flex-wrap: wrap; */
+            justify-content:space-evenly;
+        }
+        /* row-reserve 相反排
+        flex-direction主轴方向排列模式 x 
+        flex-wrap: wrap强制换行
+        justify-content 例如li的排列方式
+        space-between 一左一右（两端对齐）
+        space-around 周围空间等分
+        space-evenly 均匀分布*/
+        .list1 li,.list2 li{
+            background-color: red;
+            margin-right: 20px;
+            border: 1px dotted #ccc;
+            width: 100px;
+            height: 20px;
+            margin-bottom: 20px;
+        }
+        .list2{
+            height: 300px;
+            margin-top: 100px;
+            flex-direction: column;
+            display: flex;
+            background-color: pink;
+            align-items:center;
+            justify-content:center;
+        }
+        /* dashed 虚线
+        dotted 更细虚线 
+        align-items center纵向排列的元素在侧轴居中*
+        justify-content center:上下左右垂直居中/*/
+    </style>
+</head>
+<body>
+    <div style="width: 500px; margin: 0 auto;">
+    <ul class="list1">
+        <li>111</li>
+        <li>111</li>
+        <li>222</li>
+        <li>222</li>
+        <li>222</li>
+        <li>222</li>
+      
+    </ul>
+    <ul class="list2">
+        <li>111</li>
+        <li>111</li>
+        <li>222</li>
+        <li>222</li>
+        <li>222</li>
+       
+    </ul>
+    <div ><img src="../img/人物_02.png" alt="" style="width: 750px; height: 802px; background-color: red;"></div>
+    <div style="width: 50px; height: 100px; 
+    text-align: center;
+    background-color: pink; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; ">
+        <p> 阿萨的金卡十九大时间dsadsaasdsa多</p>
+    </div>
+
+    <svg width="500" height="500">
+       <circle cx="100" cy="150" r="100" fill="yellow"></circle>
+    </svg>
+
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-xl-4 d-flex" style="height:700px; background-color:aqua;font-size: 20px;">Calendar
+                    <div class="card" style="margin-top: 60px;margin-right: 100px; height: 500px; ">
+                        <div class="card-header">
+                            <h5 class="card-title mb-0">Radios</h5>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <label class="form-check">
+    <input class="form-check-input" type="radio" value="option1" name="radios-example" checked="">
+    <span class="form-check-label">
+      Option one is this and that—be sure to include why it's great
+    </span>
+  </label>
+                                <label class="form-check">
+    <input class="form-check-input" type="radio" value="option2" name="radios-example">
+    <span class="form-check-label">
+      Option two can be something else and selecting it will deselect option one
+    </span>
+  </label>
+                                <label class="form-check">
+    <input class="form-check-input" type="radio" value="option3" name="radios-example" checked="">
+    <span class="form-check-label">
+      Option three is disabled
+    </span>
+  </label>
+                            </div>
+                            <div>
+                                <label class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inline-radios-example" value="option1">
+    <span class="form-check-label">
+      1
+    </span>
+  </label>
+                                <label class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inline-radios-example" value="option2">
+    <span class="form-check-label">
+      2
+    </span>
+  </label>
+                                <label class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inline-radios-example" value="option3" disabled="">
+    <!-- disabled 无法点击 -->
+    <span class="form-check-label">
+      3
+    </span>
+  </label>
+                            </div>
+                        </div>
+                    </div></div>
+
+
+
+<div class="col-12 col-xl-4 d-none d-xl-flex" style="height:700px;background-color: skyblue;font-size: 20px;">Weekly sales
+                    <table border="1"  cellpadding="10px" cellspacing="0px" style="margin-top: 100px;font-size: 15px;">
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th rowspan="3">日期</th>
+                            <th colspan="4">配送信息</th>
+                        </tr>
+                      
+                          
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th rowspan="2">姓名</th>
+                            <th colspan="3">地址</th>
+                            
+                        </tr>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>省份</th>
+                            <th>市区</th>
+                            <th>地址</th>
+                            
+                        </tr>
+                        
+                
+                
+                
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>2016-05-03</td>
+                            <td>王小虎</td>
+                            <td>湖北</td>
+                            <td>襄阳</td>
+                            <td>七里村4组</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>2016-05-02</td>
+                            <td>王小虎</td>
+                            <td>湖北</td>
+                            <td>襄阳</td>
+                            <td>七里村4组</td>
+                        </tr>
+                    
+                    
+                   
+                           
+                        
+                    </table>
+                </div>
+                
+                
+
+<div class="col-12 col-lg-6 col-xl-4 d-flex" style="height:700px;">
+                    <div class="card-header">
+                        
+                        <h5 class="card-title mb-0" style="font-size: 25px;">Appointments<a href="#" data-toggle="dropdown" data-display="static"></a></h5>
+                        <div class="card-actions float-right" style="margin-left:330px;margin-top:-20px">
+                            <div class="dropdown show">
+                                <a href="#" data-toggle="dropdown" data-display="static">
+  <svg xmlns="" width="24" height="24" viewBox="0 0 24 24" 
+  fill="red"  stroke-width="2" stroke-linecap="round" 
+  stroke-linejoin="round" class="feather feather-more-horizontal align-middle">
+  <circle cx="12" cy="12" r="2"></circle>
+  <circle cx="19" cy="12" r="2"></circle>
+  <circle cx="5" cy="12" r="2"></circle></svg>
+</a>
+
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div></div>
+            
+        </div>
+</div>
+</div>
+
+
+    </div>
+</body>
+</html>

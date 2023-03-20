@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8"><!--  -->
+    <meta http-equiv="Cache-Control" content="max-age=-1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>demo</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <script>
+        (function (w, d, psd_w) {
+            var resizeTime = null,
+                waitTime = 300;
+
+            /*设置Html的FontSize*/
+            function changeRem() {
+                var width = d.documentElement.clientWidth,
+                    height = d.documentElement.clientHeight,
+                    fontSize = width / psd_w * 100;
+
+                    console.log(fontSize)
+                if (fontSize > 100) fontSize = 100;
+                if (width / height >= 0.75) fontSize = 80;
+                d.documentElement.style.fontSize = fontSize + "px";
+            }
+
+            /*屏幕变化事件*/
+            w.addEventListener("onorientationchange" in w ? "orientationchange" : "resize", function () {
+                clearTimeout(resizeTime);
+                resizeTime = setTimeout(changeRem, waitTime);
+            }, false);
+            // 每次加载页面时触发
+            w.addEventListener("pageshow", function (w) {
+                w.persisted && (clearTimeout(resizeTime), resizeTime = setTimeout(changeRem, waitTime));
+            }, false);
+            // 页面文档完全加载并解析完毕之后
+            d.addEventListener("DOMContentLoaded", changeRem, false);
+        }(window, document, 750));
+    </script>
+</head>
+<body>
+    <div class="one">
+        <div class="inner">
+            <div class="logo"></div>
+            <div class="box"></div>
+            <div class="input"><a href="#"></a></div>
+            <div class="yuyue"><a href="#"></a></div>
+        </div>
+    </div>
+
+
+    <div class="two">
+        <div class="inner">
+            <div class="logo"></div>
+            <ul class="list">
+                <li> 
+                    <p>3<span>万</span></p>
+                    <p>预约人数</p>
+                    <p>LIGHT AND</p> 
+                <div >
+                    <div class="bg">
+                        <div class="pic">
+                        </div>
+                        <P class="text">十连卷X1</P>
+                    </div>
+                    <div class="bg"><div class="pic"></div>
+                    <P class="text">1级宝石袋X1</P></div>
+                    <div class="bg"><div class="pic"></div>
+                        <P class="text">金币X10000</P></div>
+                </div>
+                </li>
+                <li> 
+                    <p>3<span>万</span></p>
+                    <p>预约人数</p>
+                    <p>LIGHT AND</p> 
+                <div>
+                    <div class="bg">
+                        <div class="pic">
+                        </div>
+                        <P class="text">十连卷X1</P>
+                    </div>
+                    <div class="bg"><div class="pic"></div>
+                    <P class="text">1级宝石袋X1</P></div>
+                    <div class="bg"><div class="pic"></div>
+                        <P class="text">金币X10000</P></div>
+                </div>
+                </li>
+                <li> 
+                    <p>3<span>万</span></p>
+                    <p>预约人数</p>
+                    <p>LIGHT AND</p> 
+                <div>
+                    <div class="bg">
+                        <div class="pic">
+                        </div>
+                        <P class="text">十连卷X1</P>
+                    </div>
+                    <div class="bg"><div class="pic"></div>
+                    <P class="text">1级宝石袋X1</P></div>
+                    <div class="bg"><div class="pic"></div>
+                        <P class="text">金币X10000</P></div>
+                </div>
+                </li>
+                <li> 
+                    <p>3<span>万</span></p>
+                    <p>预约人数</p>
+                    <p>LIGHT AND</p> 
+                <div>
+                    <div class="bg">
+                        <div class="pic">
+                        </div>
+                        <P class="text">十连卷X1</P>
+                    </div>
+                    <div class="bg"><div class="pic"></div>
+                    <P class="text">1级宝石袋X1</P></div>
+                    <div class="bg"><div class="pic"></div>
+                        <P class="text">金币X10000</P></div>
+                </div>
+                </li>
+                <li> 
+                    <p>3<span>万</span></p>
+                    <p>预约人数</p>
+                    <p>LIGHT AND</p> 
+                <div>
+                    <div class="bg">
+                        <div class="pic">
+                        </div>
+                        <P class="text">十连卷X1</P>
+                    </div>
+                    <div class="bg"><div class="pic"></div>
+                    <P class="text">1级宝石袋X1</P></div>
+                    <div class="bg"><div class="pic"></div>
+                        <P class="text">金币X10000</P></div>
+                </div>
+                </li>
+            </ul>
+            
+        </div>  
+    </div>
+
+
+    <div class="three">
+        <div class="inner">
+        <div class="yuyue"></div>
+        <div class="jiesao"></div>
+        <ul class="wawa">
+            <li><img src="../img/three_wawa1.png" alt=""></li>
+            <li><img src="../img/three_wawa1.png" alt=""></li>
+            <li><img src="../img/three_wawa1.png" alt=""></li>
+        </ul>
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="sanjiao"><p>BLUENXIERDE</p></div>
+        <div class="wm"></div>
+        <div class="cv"></div>
+        <div class="link"></div>
+        <div class="link1"></div>
+        <div class="name"><p>伊苏尔德</p></div>
+
+        <div class="end">
+            <p>Warrior</p>
+            <p>职业|战士</p>
+            <p><span></span>种族：人族</p>
+            <p><span></span>年龄：20岁</p>
+            <p><span></span>属性：木</p>
+            <p><span></span>身高：170cm</p>
+        </div>
+    
+    </div>
+    </div>
+
+
+    <div class="four">
+        <div class="inner">
+            <div class="top"></div>
+            <div class="center"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="top_left">66</div>
+            <div class="top_right">666</div>
+            <ul class="link">
+                <li></li><p></p>
+                <li></li><p></p>
+                <li></li><p></p>
+                <li></li><p></p>
+                <li></li>
+            </ul>
+
+        </div>
+    </div>
+    
+
+    <div class="five">
+        <div class="inner">
+            <div class="logo"></div>
+            <p>上海朱庇特创意设计有限公司 &nbsp;地址：上海市静安区灵石路718号D3栋</p>
+            <p>Copyright 2020 七创社沪 ICP备15037869号-9|沪网文[2018]11599-733号|沪B2-20190232</p>
+            <p>国新出审[2020]410号|ISBN978-7-498-07389-1|沪公网安备 31010602003223号</p>
+            <p>客服邮箱：SERVICE@7DOC.CN</p><br>
+            <p class="last">健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。</p>
+            <p class="last">适当游戏益脑，沉迷游戏伤身，合理安排时间，享受健康生活。</p>
+        </div>
+    </div>
+</body>
+</html>
