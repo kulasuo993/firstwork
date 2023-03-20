@@ -10,223 +10,199 @@
     <title>demo</title>
     <link rel="stylesheet" type="text/css" href="../css/common.css" />
     <link rel="stylesheet" type="text/css" href="../css/index.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="../css/pen.css" /> -->
-    <link rel="stylesheet" type="text/css" href="../css/Untitled-1.css" />
-</head>
-    <script src="../css/jquery-3.6.3.min.js"></script>
     <script>
-        $(function(){
-            $('.top1').click(function(){
-               $('.mask').show()
-            })
-            $('.cha').click(function(){
-               $('.mask').hide()
-            })
-        })
+        (function (w, d, psd_w) {
+            var resizeTime = null,
+                waitTime = 300;
+
+            /*设置Html的FontSize*/
+            function changeRem() {
+                var width = d.documentElement.clientWidth,
+                    height = d.documentElement.clientHeight,
+                    fontSize = width / psd_w * 100;
+
+                    console.log(fontSize)
+                if (fontSize > 100) fontSize = 100;
+                if (width / height >= 0.75) fontSize = 80;
+                d.documentElement.style.fontSize = fontSize + "px";
+            }
+
+            /*屏幕变化事件*/
+            w.addEventListener("onorientationchange" in w ? "orientationchange" : "resize", function () {
+                clearTimeout(resizeTime);
+                resizeTime = setTimeout(changeRem, waitTime);
+            }, false);
+            // 每次加载页面时触发
+            w.addEventListener("pageshow", function (w) {
+                w.persisted && (clearTimeout(resizeTime), resizeTime = setTimeout(changeRem, waitTime));
+            }, false);
+            // 页面文档完全加载并解析完毕之后
+            d.addEventListener("DOMContentLoaded", changeRem, false);
+        }(window, document, 750));
     </script>
+</head>
+
 <body>
+    
     <div class="inner">
         <div class="head">
-            
-                <div class="top">
-                    <a href="https://www.baidu.com/" target="_blank" >
-                        <span>进入官网</span>
-                    </a>
-                </div>
-                
-                <div class="top1">
-                    <div class="area">
-                        <a href="javascript:;" >立即预约</a>
-                    </div>   
-                </div>
-            
-        </div>
-    
-        <div class="two">
-            <span class="top2">
-                
-                P R E - R E G I S T R A T I O N
-            </span>
-        
-            <span class="top3">
-                <img src="../img/p2_line.png" alt=""><a href="https://www.baidu.com/" target="_blank">立即预约领好礼</a>
-                <img src="../img/p2_line.png" alt="">
-            </span>
-            <div class="top4">
-                <a href="https://www.baidu.com/" target="_blank"> 
-                    <span>
-                    预约达指定人数，可领取对应阶段礼包！
-                    </span>
-                </a>   
-            </div>
-        
-            <div class="num"><span style="color:#f7d974; font-size: 18px;"> 预约人数 :</span>
-                <span style="color: #ff9000; font-size: 20px;"> xxxxxx人</span>     
-            </div>
-        
-            <div class="top5" style="width:1033px; margin: 0 auto">
-                <div class="progress">
-                    <div class="bar" style="width: 69%"></div>
-                    <div class="icon">
-                        <span class="pointer"></span>
-                        <span class="pointer"></span>
-                        <span class="pointer"></span>
-                        <span class="pointer1"></span>
-                    </div>
-                </div>
-                <div style="color:#fff" class="clearfix">
-                    <div style="float: left;width:10%"><span class="zero">0</span></div>
-                    <div style="float: left;width:20%">10万</div>
-                    <div style="float: left;width:30%">30万</div>
-                    <div style="float: left;width:20%">60万</div>
-                    <div style="float: left;width:20%">100万</div>
-                    <!-- <div class="clearfix"></div> -->
-                </div>
-            </div>
-        
-            <ul class="reward">
-                <li class="img1">
-                    <p><img src="../img/cat1.png" alt=""> </p>
-                    <span>小猫</span>
-                </li>
-                <li class="img1">
-                    <p><img src="../img/cat1.png" alt=""> </p>
-                    <span>小猫</span>
-                </li>
-                <li class="img1">
-                    <p><img src="../img/cat1.png" alt=""> </p>
-                    <span>小猫</span>
-                </li>
-                <li class="img1">
-                    <p><img src="../img/cat1.png" alt=""> </p>
-                    <span>小猫</span>
-                </li>
-            </ul>
-        
-            <ul class="reward2 clearfix">
-                <li class="img1">
-                    <p><img src="../img/cat1.png" alt=""> </p>
-                    <span>小猫</span>
-                </li>
-                <li class="img1">
-                    <p><img src="../img/cat1.png" alt=""> </p>
-                    <span>小猫</span>
-                </li>
-                <li class="img1">
-                    <p><img src="../img/cat1.png" alt=""> </p>
-                    <span>小猫</span>
-                </li>
-                <li class="img1">
-                    <p><img src="../img/cat1.png" alt=""> </p>
-                    <span>小猫</span>
-                </li>
-            </ul>
-            
-            <a href="https://www.baidu.com/" target="_blank"  class="top6"> 
-                <span>点我预约</span>
-            </a>
-        </div>
-               
-        <div class="footer">
-            <div class="guanzhu" >
-                <a href="https://www.baidu.com/" target="_blank">
-                <span>关注我们</span>
+            <div class="top">
+                <a href="https://www.baidu.com/" target="_blank" >
+                    <span>进入官网</span>
                 </a>
             </div>
             
-            <div class="logo">    
-                <a href="https://weixin.qq.com/" target="_blank"><img src="../img/focus_wx.png" class="pic2"></a>
-                <a href="https://www.sina.com.cn/" target="_blank"><img src="../img/focus_sina.png"></a> 
-             </div>
-              
-            <div class="link">
-                <p>
-                    <a href="#" target="_blank">
-                    <span class="icon1"></span>在线客服
-                    </a>
-                </p>
-                <p>
-                    <a href="#" target="_blank">
-                    <span class="icon2"></span>反馈
-                    </a>
-                </p>
-                <p>
-                    <a href="#" target="_blank">
-                    <span class="icon3"></span>加入我们
-                    </a>
-                </p>
-            </div>
-        
-            <div class="other">
-                <a href="#" target="_blank"><img src="../img/cdpr.png" class="pic1"></a>
-                <a href="https://www.sina.com.cn/" target="_blank"><img src="../img/gaea.png"></a>
-            </div>
-              
-            <div class="copyright">
-                <div class="copyright-w">
-                    <p>
-                        <a href="http://www.gaea.com/cn/law" target="_blank">法律声明</a>&nbsp;|&nbsp;
-                        <a href="http://www.gaea.com/cn/privacy" target="_blank">隐私条款</a>&nbsp;|&nbsp;
-                        <a href="http://www.gaea.com/cn/service" target="_blank">防沉迷系统</a>&nbsp;|&nbsp;
-                        <a href="https://www.gaea.com/cn/childProtection.html" target="_blank">未成年人家长监护</a>&nbsp;|&nbsp;
-                        <a href="https://www.gaea.com/cn/childProtection.html" target="_blank">用户服务条款</a>
-                    </p>
-                    <p>温馨提示：本游戏产品适合12岁（含）以上用户</p>
-                    <p>深圳市盖娅科技有限公司</p>
-                    <p>
-                        <P>粤ICP备14092178号-9| 粤网文[2016]0511-004号 |  粤B2-20160276 
-                    </p>
-                     <p>著作权人：CD Project S.A.</p>
-                    <p>
-                        新广出审[2017]5561 | ISBN 978-7-7979--8722-6 |
-                        <a href="http://sq.ccm.gov.cn:80/ccnt/sczr/service/business/emark/gameNetTag/4028c08c577024b801577562b9b23fe5" target="_blank">文网游进字〔2017〕0105 号
-                            <img src="https://image.gaeamobile.net/image/20180711/184354/label_2.png" width="24px" height="24px" style="vertical-align: middle;">
-                        </a>
-                    </p>
-                    <p>客服邮箱：kf-service@gaeamobile.com</p>
-                    <p>健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
-                </div>
+            <div class="top1">
+                <div class="area">
+                    <a href="https://www.baidu.com/" target="_blank">立即预约</a>
+                </div>   
             </div>
         </div>
     </div>
-  
-    <div class="mask">
-        <a href="javascript:;"><img src="../img/微信图片_20230107213837.png" alt="" class="cha"></a>
-        <div class="from">
-            <div class="kuang">
-                <span class="again">请输入验证码！</span>
-               <div class="kuang1">
-                <p>
-                <select class="right">
-                    <option value="1">+86</option>
-                    <option value="2">+11</option>
-                    <option value="3">+12</option>
-                </select>
-                </p>
-               <p>
-                <input type="text" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp请输入手机号码" class="left">
-               </p>
-            </div>
-            <div class="kuang2">
-                <p>
-                    <input type="text" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp请输入短信验证码" class="right1">
-                </p>
-                <p> <input type="text" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp获取验证码" class="left1"> </p>
-       
-            </div>
-           <p class="tongyi">
-            <input type="checkbox">&nbsp&nbsp&nbsp同意“盖娅互娱服务条款及隐私政策”
-           </p>
-           <div class="finish">
-                    <p>完成预约</p>
-           </div>
+    <div class="two">
+        
+        <span class="top2">
+            P R E - R E G I S T R A T I O N
+        </span>
+    
+        <span class="top3">
+            <a href="https://www.baidu.com/" target="_blank">立即预约领好礼</a>
+            <!-- now -->
+        </span>
+        <div class="top4">
+            <a href="https://www.baidu.com/" target="_blank"> 
+                <span>
+                预约达指定人数，可领取对应阶段礼包！
+                </span>
+            </a>   
         </div>
+        <div class="num">
+                <p class="num1">预约人数:</p>
+                <p class="num2">xxxxxx人</p>
         </div>
+        
+
+        <div class="top5" style="width:6.6rem; margin: 0 auto">
+            <div class="progress">
+                <div class="bar" style="width: 50%"></div>
+                <div class="icon">
+                    <span class="pointer"></span>
+                    <span class="pointer"></span>
+                    <span class="pointer1"></span>
+                    <span class="pointer1"></span>
+                </div>
+            </div>
+            <div style="color:#fff" class="clearfix" >
+                 <div class="ziti">
+                <div style="float: left;width:10%"><span class="zero">0</span></div>
+                <div style="float: left;width:8% ">10万</div>
+                <div style="float: left;width:38%">30万</div>
+                <div style="float: left;width:12%">60万</div>
+                <div style="float: left;width:32%">100万</div>
+                 </div>
+                
+            </div>
+        </div>
+
+         
+        <ul class="reward clearfix">
+            <li class="img">
+                <p><img src="../img/cat1.png" alt="" > </p>
+                <span>小猫</span>
+            </li>
+            <li class="img">
+                <p><img src="../img/cat1.png" alt=""> </p>
+                <span>小猫</span>
+            </li>
+            <li class="img">
+                <p><img src="../img/cat1.png" alt=""> </p>
+                <span>小猫</span>
+            </li>
+            <li class="img">
+                <p><img src="../img/cat1.png" alt=""> </p>
+                <span>小猫</span>
+            </li>
+        </ul> 
+
+
+      <div class="link_me">
+        <a href="https://www.baidu.com/" target="_blank" > 
+            点我预约
+        </a>
       </div>
-</body>
+        
 
 
-<script type="text/javascript" src="../js/jquery.min.js"></script>
-<script type="text/javascript" src="../js/index.js"></script>
+
+    </div>
+
+
+
+    <div class="footer">
+        <div class="guanzhu" >
+            <a href="https://www.baidu.com/" target="_blank">
+            <span>关注我们</span>
+            </a>
+        </div>
+        <div class="logo">
+             <a href="https://weixin.qq.com/"  target="_blank" ><p class="pic1">微信</p></a>
+            <a href="https://www.sina.com.cn/"  target="_blank" ><p class="pic">新浪</p></a> 
+        </div>
+
+        <div class="link">
+            <p>
+                <a href="https://www.4399.com/" target="_blank">
+                <span class="icon1"></span>在线客服
+                </a>
+            </p>
+            <p>
+                <a href="https://www.4399.com/special/241.htm" target="_blank">
+                <span class="icon2"></span>反馈
+                </a>
+            </p>
+            <p>
+                <a href="https://www.4399.com/flash/225563.htm" target="_blank">
+                <span class="icon3"></span>加入我们
+                </a>
+            </p>
+        </div>
+
+        <div class="other">
+            <a href="https://www.4399.com/flash/3881.htm" target="_blank"><p class="bird">小鸟</p></a>
+            <a href="https://www.sina.com.cn/" target="_blank"><p class="geae">盖亚</p></a>
+        </div>
+
+        <div class="copyright">
+            
+                <p>
+                    <a href="http://www.gaea.com/cn/law" target="_blank">法律声明</a>&nbsp;|&nbsp;
+                    <a href="http://www.gaea.com/cn/privacy" target="_blank">隐私条款</a>&nbsp;|&nbsp;
+                    <a href="http://www.gaea.com/cn/service" target="_blank">防沉迷系统</a>&nbsp;|&nbsp;
+                    <a href="https://www.gaea.com/cn/childProtection.html" target="_blank">未成年人家长监护</a>&nbsp;|&nbsp;
+                    <a href="https://www.gaea.com/cn/childProtection.html" target="_blank">用户服务条款</a>
+                </p>
+                <p>温馨提示：本游戏产品适合12岁（含）以上用户</p>
+                <p>深圳市盖娅科技有限公司</p>
+                <p>
+                    <P>粤ICP备14092178号-9| 粤网文[2016]0511-004号 |  粤B2-20160276 
+                </p>
+                 <p>著作权人：CD Project S.A.</p>
+                <p>
+                    新广出审[2017]5561 | ISBN 978-7-7979--8722-6 |
+                    <a href="http://sq.ccm.gov.cn:80/ccnt/sczr/service/business/emark/gameNetTag/4028c08c577024b801577562b9b23fe5" target="_blank">文网游进字〔2017〕0105 号
+                        
+                    </a>
+                </p>
+                <p>客服邮箱：kf-service@gaeamobile.com</p>
+                <p>健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+        </div>
+           
+</div>
+
+
+        
+    
+
+    
 </body>
 </html>
